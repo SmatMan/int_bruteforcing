@@ -10,12 +10,13 @@ max_gen = 5000000 # Pick the maximum number the function can generate
 
 print(colored("Generating a number...", 'yellow', attrs=['blink']))
 number = random.randint(min_gen, max_gen)
-start_time = time.time()
 
 input(colored(f"The number I generated is {number}. Press enter to start bruteforcing", 'green'))
 
 guess = 0
 increment = 1
+
+start_time = time.time()
 
 while guess != number:
     print(colored(f'{guess} was not the correct number. Trial {increment}.', 'red',))

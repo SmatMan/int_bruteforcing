@@ -7,7 +7,6 @@ import time
 
 min_gen = 1 # Pick the minimum number the function can generate
 max_gen = 5000000 # Pick the maximum number the function can generate
-start_time = time.time()
 
 ### Function starts below
 
@@ -15,6 +14,8 @@ print(colored("Generating a number...", 'yellow', attrs=['blink']))
 number = random.randint(min_gen, max_gen)
 
 input(colored(f"The number I generated is {number}. Press enter to start bruteforcing", 'green'))
+
+start_time = time.time()
 
 guess = 0
 
